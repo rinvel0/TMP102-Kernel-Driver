@@ -1,6 +1,7 @@
 #!/bin/bash
 while true; do
 	clear
+
 	# Read raw 16-bit data from TMP102
 	raw_temp=$(i2cget -y 3 0x48 0x00 w)
 	echo "Raw temperature data: $raw_temp"
